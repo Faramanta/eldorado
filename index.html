@@ -11,18 +11,36 @@
 <body>
     <div class="container">
         <div class="breadcrumbs">
-            <ul class="breadcrumbs__list">
+            <ul class="breadcrumbs__list breadcrumbs__list--pickup">
                 <li class="breadcrumbs__item">
-                    <p class="breadcrumbs__title">Ваша корзина</p>
+                    <p class="breadcrumbs__title breadcrumbs__title--active">1. Ваша корзина</p>
                 </li>
                 <li class="breadcrumbs__item">
-                    <p class="breadcrumbs__title">Авторизация</p>
+                    <p class="breadcrumbs__title">2. Авторизация</p>
                 </li>
                 <li class="breadcrumbs__item">
-                    <p class="breadcrumbs__title">Пункт самовывоза</p>
+                    <p class="breadcrumbs__title">3. Пункт самовывоза</p>
                 </li>
                 <li class="breadcrumbs__item">
-                    <p class="breadcrumbs__title">Подтверждение</p>
+                    <p class="breadcrumbs__title">4. Подтверждение</p>
+                </li>
+            </ul>
+
+            <ul class="breadcrumbs__list breadcrumbs__list--delivery">
+                <li class="breadcrumbs__item">
+                    <p class="breadcrumbs__title breadcrumbs__title--active">1. Ваша корзина</p>
+                </li>
+                <li class="breadcrumbs__item">
+                    <p class="breadcrumbs__title">2. Авторизация</p>
+                </li>
+                <li class="breadcrumbs__item">
+                    <p class="breadcrumbs__title">3. Дата и адрес доставки</p>
+                </li>
+                <li class="breadcrumbs__item">
+                    <p class="breadcrumbs__title">4. Способ оплаты</p>
+                </li>
+                <li class="breadcrumbs__item">
+                    <p class="breadcrumbs__title">5. Подтверждение</p>
                 </li>
             </ul>
         </div>
@@ -30,47 +48,50 @@
         <div class="cart">
             <ul class="cart__list">
                 <li class="cart__item">
-                    <img src="">
-                    <a class="cart__product-name">Встраиваемая посудомоечная машина BOSCH SPV 40M 20RU</a>
-                    <div class="cart__credit"></div>
+                    <img src="img/washer.jpg">
+                    <a href="#" class="cart__product-name">Встраиваемая посудомоечная машина BOSCH SPV 40M 20RU</a>
+                    <img src="img/credit.jpg" class="cart__credit">
                     <div class="cart__inStock">В наличии</div>
                     <div class="cart__price">500 199 р. ×</div>
-                    <input class="cart__input" type="number" value="2">
+                    <input class="cart__input" type="text" value="2">
                     <div class="cart__price cart__price--sale">1 000 399 р</div>
                     <div class="cart__price cart__price--result">1 000 399 р</div>
+                    <div class="cart__close"></div>
                 </li>
 
-                <li class="cart__item">
-                    <img src="">
-                    <a class="cart__product-name">Ноутбук SAMSUNG ATIV Book 2 NP270E5E-K03</a>
+                <li class="cart__item clearfix">
+                    <img src="img/notebook.jpg">
+                    <a href="#" class="cart__product-name">Ноутбук SAMSUNG ATIV Book 2 NP270E5E-K03</a>
                     <div class="cart__credit"></div>
                     <div class="cart__inStock">В наличии</div>
                     <div class="cart__price"></div>
-                    <input class="cart__input" type="number" value="1">
+                    <input class="cart__input" type="text" value="1">
                     <div class="cart__price cart__price--sale"></div>
                     <div class="cart__price cart__price--result">1 000 399 р</div>
                     <div class="cart__certificate">
                         <form name="cart__form" method="post" class="cart__form">
-                            <label class="cart__radio-indicator">
-                                <input type="radio" name="cart__radio" class="cart__radio cart__radio--red">
-                                нет
+                            <p class="cart__form-title">Сертификат HiTechnic</p>
+                            <label class="cart__radio-block">
+                                <input type="radio" name="cart__radio" class="cart__radio cart__radio--red" checked="checked">
+                                <span class="cart__radio-indicator">нет</span>
                             </label>
-                            <label class="cart__radio-indicator">
+                            <label class="cart__radio-block">
                                 <input type="radio" name="cart__radio" class="cart__radio">
-                                1 год (1 950 р.)
+                                <span class="cart__radio-indicator">1 год (1 950 р.)</span>
                             </label>
-                            <label class="cart__radio-indicator">
-                                <input type="radio" name="cart__radio" class="cart__radio">
-                                2 года (2 950 р.)
+                            <label class="cart__radio-block">
+                                <input type="radio" name="cart__radio" class="cart__radio" >
+                                <span class="cart__radio-indicator">2 года (2 950 р.)</span>
                             </label>
 
                         </form>
                     </div>
+                    <div class="cart__close"></div>
                 </li>
             </ul>
 
-            <a href="#" class="cart-related__btn--white">Рекомендуемые аксессуары</a>
-            <a href="#" class="cart-related__btn--white">Установка и настройка</a>
+            <a href="#" class="cart-related__btn cart-related__btn--white">Рекомендуемые аксессуары</a>
+            <a href="#" class="cart-related__btn cart-related__btn--white">Установка и настройка</a>
             <div class="cart-related">
                 <ul class="cart-related__list">
                     <li class="cart-related__item">
