@@ -374,9 +374,8 @@ h1, h2, h3, h4, h5, h6{
 
 .cart-related__price {
     position: absolute;
-    bottom: 10px;
+    bottom: 15px;
     left: 85px;
-    margin-top: 13px;
 }
 
 .cart-related__btn--red {
@@ -387,5 +386,5 @@ h1, h2, h3, h4, h5, h6{
     background-image: linear-gradient(#ec5d78, #c61e40);
     border: none;
     border-radius: 10px;
-    bottom: 9px;
+    bottom: 13px;
 }
